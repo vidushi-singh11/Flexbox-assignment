@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question3</title>
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.main {
+    background-color: #111;
+    color: #fff;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+.box {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 60px;
+    flex-wrap: wrap;
+}
+
+.one,
+.two,
+.three {
+    flex: 1;
+    min-width: 250px;
+    margin-bottom: 20px;
+}
+
+.one img {
+    max-width: 100px;
+    margin-bottom: 10px;
+}
+
+.title {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.heading {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.heading::after {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 2px;
+    background-color: #c27a2b;
+    margin-top: 5px;
+}
+
+.two table {
+    color: #ccc;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.three p {
+    color: #ccc;
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+       </style>
+</head>
+<body>
+ <div class="main">
+    <div class="box">
+        <div class="one">
+            <img src="./PW-logo.jpeg" alt="logo">
+            <p class="title">Emsil Us:</p>
+            <p>support@pwskills.com</p>
+            <img src="./badge.jpeg" alt="badge">
+            <p>ISO 9001</p>
+        </div>
+        <div class="two">
+            <p class="heading">PW Skills</p>
+            
+            <table>
+                <tr>
+                    <td>About Us</td>
+                    <td>Contact Us</td>
+                </tr>
+                <tr>
+                    <td>FAQs</td>
+                    <td>Job <br> Assistance</td>
+                </tr>
+                <tr>
+                    <td>Privacy Policy</td>
+                    <td>Terms and <br> Conditions</td>
+                </tr>
+            </table>
+        </div>
+        <div class="three">
+            <p class="heading">Products</p>
+            <p>PW Skills Lab</p>
+            <p>Job Portal</p>
+            <p>Experience portal</p>
+            <p>Become an affiliate</p>
+            <p>Hall of fame</p>
+        </div>
+    </div>
+ </div>
+</body>
+</html>

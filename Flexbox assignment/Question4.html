@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gmail Landing Clone</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Open Sans', sans-serif;
+      background-color: #fff;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px 40px;
+    }
+
+    .top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 15px;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .logo img {
+      width: 30px;
+      height: 30px;
+    }
+
+    .logo p {
+      font-size: 18px;
+      font-weight: 500;
+    }
+
+    .nav-buttons {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+    }
+
+    .nav-buttons a {
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: 400;
+    }
+
+    .nav-buttons .work {
+      color: #1a73e8;
+    }
+
+    .nav-buttons .signin {
+      padding: 8px 16px;
+      border: 1px solid #dadce0;
+      border-radius: 4px;
+      color: #1a73e8;
+    }
+
+    .nav-buttons .create {
+      background-color: #1a73e8;
+      color: white;
+      padding: 8px 16px;
+      border-radius: 4px;
+    }
+
+    .main-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      padding: 60px 0;
+      gap: 40px;
+    }
+
+    .left {
+      flex: 1;
+      min-width: 300px;
+    }
+
+    .left h1 {
+      font-size: 48px;
+      font-weight: 700;
+      margin-bottom: 20px;
+      line-height: 1.2;
+    }
+
+    .left p {
+      font-size: 18px;
+      color: #5f6368;
+      margin-bottom: 30px;
+      max-width: 500px;
+    }
+
+    .cta {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .cta .blue-btn {
+      background-color: #1a73e8;
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      font-size: 16px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .cta a {
+      font-size: 16px;
+      color: #1a73e8;
+      text-decoration: none;
+    }
+
+    .right {
+      flex: 1;
+      min-width: 300px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .right img {
+      width: 100%;
+      max-width: 550px;
+      height: auto;
+    }
+
+    @media screen and (max-width: 768px) {
+      .main-content {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .right {
+        justify-content: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="top">
+      <div class="logo">
+        <img src="./Gmail-logo.png" alt="Gmail Logo">
+        <p>Gmail</p>
+      </div>
+      <div class="nav-buttons">
+        <a href="#" class="work">For Work</a>
+        <a href="#" class="signin">Sign In</a>
+        <a href="#" class="create">Create an account</a>
+      </div>
+    </div>
+
+    <div class="main-content">
+      <div class="left">
+        <h1>Secure, smart, and easy to use email</h1>
+        <p>Get more done with Gmail. Now integrated with Google Chat, Google Meet, and more, all in one place.</p>
+        <div class="cta">
+          <button class="blue-btn">Create an account</button>
+          <a href="#">For Work</a>
+        </div>
+      </div>
+      <div class="right">
+        <img src="web.webp" alt="Gmail Visual">
+      </div>
+    </div>
+  </div>
+</body>
+</html>
